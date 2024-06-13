@@ -15,8 +15,9 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-- id: quickpage-digisense-io
-  name: quickpage.digisense.io
-  url: 'https://quickpage.digisense.io/'
+- id: quickpage-api-endpoint
+  name: Quickpage API endpoint
+  url: 'https://quickpage-api.dg-staging/health'
   method: GET
   expectStatus: 200
+  linkable: false
