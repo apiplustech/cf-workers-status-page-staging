@@ -16,7 +16,11 @@ entry-point = "./"
 mode = "smart"
 
 # uncomment and adjust following if you are not using GitHub Actions
-#[env.production]
+[env.production]
+kv_namespaces = [
+  { binding = "__STATIC_CONTENT", id = "8f877e42c87c4588836a41daceb842d7" },
+  { binding = "KV_STATUS_PAGE", id = "c86b2bcd5e59442a8628ea64a4fcbc11" }
+]
 #kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
 #zone_id="xxx"
 #route="xxx"
