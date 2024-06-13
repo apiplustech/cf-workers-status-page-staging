@@ -17,7 +17,7 @@ settings:
 monitors:
 - id: quickpage-api-endpoint
   name: Quickpage API endpoint
-  url: 'https://quickpage-api.dg-staging/health'
+  url: 'https://quickpage-api.dg-staging.site/health'
   method: GET
   expectStatus: 200
   linkable: false
