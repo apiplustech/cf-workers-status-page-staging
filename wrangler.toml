@@ -4,10 +4,7 @@ account_id = ""
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
-kv-namespaces = [
-  { binding = "__STATIC_CONTENT", id = "8f877e42c87c4588836a41daceb842d7" },
-  { binding = "KV_STATUS_PAGE", id = "c86b2bcd5e59442a8628ea64a4fcbc11" }
-]
+
 [triggers]
 crons = ["*/5 * * * *"]
 
@@ -19,7 +16,5 @@ entry-point = "./"
 mode = "smart"
 
 # uncomment and adjust following if you are not using GitHub Actions
-#[env.production]
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
-#zone_id="xxx"
-#route="xxx"
+[env.production]
+kv_namespaces = [{binding="KV_STATUS_PAGE", id="c86b2bcd5e59442a8628ea64a4fcbc11"}]
