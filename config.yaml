@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.dg-staging.site' # used for Slack messages
+  url: 'https://status.staging-main.site' # used for Slack messages
   logo: api-logo.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -17,7 +17,7 @@ settings:
 monitors:
 - id: quickpage-api-endpoint
   name: Quickpage API endpoint
-  url: 'https://quickpage-api.dg-staging.site/health'
+  url: 'https://quickpage-api.staging-main.site/health'
   method: GET
   expectStatus: 200
   linkable: false
